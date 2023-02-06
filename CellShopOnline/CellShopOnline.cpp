@@ -3,7 +3,7 @@
 #include<iostream> 
 #include<conio.h> 
 #include<istream> 
-#define FILE_NAME "shop.dat"
+
 using namespace std;
 int main()
 {
@@ -13,7 +13,7 @@ int main()
     int price[8] = { 7000, 6500, 2600, 4500,5000, 6000, 3800, 2000};
     double year[8] = { 2020,2021,2220,2021,2020,2019,2022,2000};
     double ssize[8] = {6.6,7.7,4.4,3.3,6.6,7.7,4.4,0.2};
-    string form[8] = { "rectangle","rectangle","rectangle", "oval","rectangle", "oval","oval", "with buttons" };
+    string form[8] = { "rectangle","rectangle","rectangle", "oval","rectangle", "ogit val","oval", "with buttons" };
     cout << "-------------Welcome to CellPhoneStore-------------" << endl;
     cout << endl;
     cout << "Please, fill the register form" << endl;
