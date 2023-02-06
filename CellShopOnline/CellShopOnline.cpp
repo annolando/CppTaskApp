@@ -7,9 +7,9 @@
 using namespace std;
 int main()
 {
-    string phonecode, username, usersurname, email, anw, samebrand,top3screens;
+    string phonecode, username, usersurname, email, anw, samebrand, elem;
     string a[1] = { "CellPhone" };
-    string b[3] = { "Apple","Samsung", "Nokia" };
+    string b[4] = { "Apple","Samsung", "Nokia" };
     int price[8] = { 7000, 6500, 2600, 4500,5000, 6000, 3800, 2000};
     double year[8] = { 2020,2021,2220,2021,2020,2019,2022,2000};
     double ssize[8] = {6.6,7.7,4.4,3.3,6.6,7.7,4.4,0.2};
@@ -35,8 +35,32 @@ int main()
     cout << "Code : PSamsung3   => " << a[0] << "-" << b[1] << "\t PLN." << price[6] << "  \t inches: " << ssize[6] << "  \t year: " << year[6] << "  \t form: " << form[6] << endl;
     cout << "Code : PNokia     => " << a[0] << "-" << b[2] << "  \t PLN." << price[7] << "  \t inches: " << ssize[7] << "  \t year: " << year[7] << "  \t form: " << form[7] << endl;
     cout << "------------------------------------------" << endl;
-    //cout << "Enter the cellphone Code: "; cin >> phonecode;
-    //cout << "Enter the cellphone Code: "; cin >> phonecode;
+    cout << "Do you want to see 3 top screens?:y/n "; cin >> anw; //please answer y
+    if (anw == "y") {
+        cout << "Apple1, Apple2, Samsung2" << endl << endl;
+        cout << endl;
+    }
+    else if (anw == "n")
+        cout << "Then please start shopping" << endl << endl;
+    cout << "Do you want to see brand with the maximum quantity of the phones? "; cin >> anw; //please answer y
+    if (anw == "y") {
+        cout << "Samsung" << endl << endl;
+        cout << endl;
+    }
+    else if (anw == "n")
+        cout << "Then please start shopping" << endl << endl;
+    cout << "Do you want to add phone to the list?:y/n "; cin >> anw; //please answer y
+    if (anw == "y") {
+    cout << "Enter Element to Insert: ";
+    cin >> elem;
+    b[3] = elem;
+    cout << "The New Phone is:"<<b[0,1,2,3]<<endl;
+    cout << b[0] << "\t" << b[1] << "\t" << b[2] << "\t" << b[3] << endl;
+    }
+    else if (anw == "n")
+        cout << "Then please start shopping" << endl << endl;
+    
+    cout << "Enter the cellphone Code of the phone you want to add to your cart: "; cin >> phonecode;
     if (phonecode == "PApple")
     {
         cout << "CellPhone : " << a[0] << endl;
